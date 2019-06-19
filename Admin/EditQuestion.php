@@ -21,7 +21,13 @@
     </script>
 </head>
 <body>
+    <center>
+
     <h1>題目建立</h1>
+
+    <a href="../index.php">HOME</a>
+    &nbsp&nbsp&nbsp&nbsp&nbsp<a href="AdminGui.php">返回管理者介面</a><br/>
+    <br/>
 
     <?php
         session_start();
@@ -34,51 +40,50 @@
     <form action="EditQuestion.php" method="post" Enctype="multipart/form-data">
         <table>
             <tr>
-                <td>關卡</td>
-                <td><input type="text" name="level" value="<?php echo $levelName;?>" size="35"></td>
+                <td><b>關卡</b></td>
+                <td><input type="text" name="level" value="<?php echo $levelName;?>" size="30" style="border-width:3px;font-size:16px;"></td>
             </tr>
             <tr>
-                <td>題目</td>
-                <td><input type="text" name="question" size="35"></td>
+                <td><b>題目</b></td>
+                <td><input type="text" name="question" size="30" style="border-width:3px;font-size:16px;"></td>
             </tr>
             <tr>
-                <td>選項1</td>
-                <td><input type="text" name="choice1" size="35"></td>
+                <td><b>選項1</b></td>
+                <td><input type="text" name="choice1" size="30" style="border-width:3px;font-size:16px;"></td>
             </tr>
             <tr>
-                <td>選項2</td>
-                <td><input type="text" name="choice2" size="35"></td>
+                <td><b>選項2</b></td>
+                <td><input type="text" name="choice2" size="30" style="border-width:3px;font-size:16px;"></td>
             </tr>
             <tr>
-                <td>選項3</td>
-                <td><input type="text" name="choice3" size="35"></td>
+                <td><b>選項3</b></td>
+                <td><input type="text" name="choice3" size="30" style="border-width:3px;font-size:16px;"></td>
             </tr>
             <tr>
-                <td>選項4</td>
-                <td><input type="text" name="choice4" size="35"></td>
+                <td><b>選項4</b></td>
+                <td><input type="text" name="choice4" size="30" style="border-width:3px;font-size:16px;"></td>
             </tr>
             <tr>
-                <td>答案</td>
-                <td><input type="number" name="answer" value="1" min="1" max="4" ></td>
+                <td><b>答案</b></td>
+                <td><input type="number" name="answer" value="1" min="1" max="4" style="border-width:3px;font-size:16px;"></td>
             </tr>
             <tr>
-                <td>正解pic</td>
-                <td><input type="file" name="Image1" onchange="readURL(this)" targetID="preview_progressbarTW_img1" accept="image/gif, image/jpeg, image/png"/></td>
+                <td><b>正解pic</b></td>
+                <td><input type="file" style="font-size:16px;" name="Image1" onchange="readURL(this)" targetID="preview_progressbarTW_img1" accept="image/gif, image/jpeg, image/png"/></td>
             </tr>
             <tr>
-                <td colspan="2"><img id="preview_progressbarTW_img1" src="#" ,width="450" height="300" /></td>
+                <td colspan="2"><img id="preview_progressbarTW_img1" src="#" ,width="400" height="250" /></td>
             </tr>
             <tr>
-                <td>錯誤pic</td>
-                <td><input type="file" name="Image2" onchange="readURL(this)" targetID="preview_progressbarTW_img2" accept="image/gif, image/jpeg, image/png" ></td>
+                <td><b>錯誤pic</b></td>
+                <td><input type="file" style="font-size:16px;" name="Image2" onchange="readURL(this)" targetID="preview_progressbarTW_img2" accept="image/gif, image/jpeg, image/png" ></td>
             </tr>
             <tr>
-                <td colspan="2"><img id="preview_progressbarTW_img2" src="#" ,width="450" height="300" /></td>
+                <td colspan="2"><img id="preview_progressbarTW_img2" src="#" ,width="400" height="250" /></td>
             </tr>
         </table>
         <br/>
-        <input type="submit" name="send" value="建立題目">
-        <input type="submit" name="returnHome" value="返回首頁">
+        <input type="submit" name="send" value="建立題目" style="border-width:3px;width:400px;font-size:16px;">
     </form>
 
     <?php
@@ -130,10 +135,8 @@
                 $_SESSION['levelName']=$_POST['level'];
             }
         }
-        //返回首頁
-        if(isset($_POST["returnHome"])){
-            header("Location: ./Home.php"); 
-        }
     ?>
+
+    </center>
 </body>
 </html>

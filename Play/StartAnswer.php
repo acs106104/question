@@ -7,6 +7,10 @@
     <title>Answer Question</title>
 </head>
 <body>
-    開始回答
+    <center>
+    <h1>選擇關卡</h1>
+    <hr/><br/>
+        <a href="./level1/levelOne.php"><img src="./pic/button1.png"></a>
+    </center>
 </body>
 </html>

@@ -7,6 +7,7 @@
     <title>Show Question</title>
 </head>
 <body>
+    <center>
     <h1>題庫</h1>
 
     <?php
@@ -24,14 +25,15 @@
     ?>
 
     共有&nbsp<font color="red"><?echo $num_rows;?></font>&nbsp題
-    &nbsp&nbsp&nbsp&nbsp&nbsp<a href="Home.php">返回HOME</a>
+    &nbsp&nbsp&nbsp&nbsp&nbsp<a href="../index.php">HOME</a>
+    &nbsp&nbsp&nbsp&nbsp&nbsp<a href="AdminGui.php">返回管理者介面</a>
     <br/>
     <br/>
 
     <?php for ($i=0;$i<$num_rows;$i++) {
         $row = mysqli_fetch_assoc($result); //將陣列以欄位名索引  
     ?>
-        <table border="1">
+        <table border="1" width="345">
         <tr>
             <td colspan="4" bgcolor="#90CAF9"><b>Level</b>:&nbsp <?echo $row['Level'];?></td>
         </tr>
@@ -65,7 +67,7 @@
             <td colspan="4" bgcolor="#90CAF9">錯誤pic</td>
         </tr>
         <tr>
-            <td colspan="4"><?php if($row['wrongPic']!=null){echo "<img alt=無照片 src=\"./pic/".$row['wrongPic']."\" width150 height=100/>";}?></td>
+            <td colspan="4"><?php if($row['wrongPic']!=null){echo "<img alt=無照片 src=\"./pic/".$row['wrongPic']."\" width150 height=100/>";} else echo "無";?></td>
         </tr>
         <tr>
             <td colspan="4" bgcolor="yellow"><center><a href="delete.php?Q=<? echo $row['Question']; ?>" onclick="return confirm('確定要刪除這筆資料？');">刪除</a></center></td>
@@ -75,7 +77,11 @@
     <br/>
     <hr/>
     <br/>
-    <?}?>   
+    <?}?> 
 
+    <a href="../index.php">HOME</a>
+    &nbsp&nbsp&nbsp&nbsp&nbsp<a href="AdminGui.php">返回管理者介面</a> 
+
+    </center>
 </body>
 </html>

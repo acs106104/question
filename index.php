@@ -7,6 +7,7 @@
     <title>Home</title>
 </head>
 <body>
+    <center>
     <h1>Welcome</h1>
     <!--顯示當前時間-->
     <div id="linkweb">
@@ -16,11 +17,11 @@
     </div>
     <br/>
     <!--建立表單-->
-    <form action="Home.php" method="post">
+    <form action="index.php" method="post">
         <!--創建題目-->
-        <input type="submit" value="出題" name="Edit">
+        <input type="submit" value="管理者" name="Edit" style="font-size:16px;">
         <!--開始回答問題-->
-        <input type="submit" value="開始挑戰" name="Answer">
+        <input type="submit" value="開始挑戰" name="Answer" style="font-size:16px;">
     </form>
 
     <?php
@@ -35,15 +36,15 @@
         $num_rows = mysqli_num_rows($result);
 
         if(isset($_POST["Edit"])){
-            header("Location: ./AdminCheck.php"); 
+            header("Location: ./Admin/AdminCheck.php"); 
         }
         else if(isset($_POST["Answer"])){
             if($num_rows==0)
                 echo "<script> alert('尚未建立題目'); </script>";
             else
-                header("Location: ./StartAnswer.php"); 
+                header("Location: ./Play/StartAnswer.php"); 
         }
     ?>
-
+    </center>
 </body>
 </html>
