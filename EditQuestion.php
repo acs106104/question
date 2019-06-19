@@ -23,31 +23,39 @@
 <body>
     <h1>題目建立</h1>
 
+    <?php
+        session_start();
+        if(isset($_SESSION['levelName']))
+            $levelName=$_SESSION['levelName'];
+        else
+            $levelName="";
+    ?>
+
     <form action="EditQuestion.php" method="post" Enctype="multipart/form-data">
         <table>
             <tr>
                 <td>關卡</td>
-                <td><input type="text" name="level" ></td>
+                <td><input type="text" name="level" value="<?php echo $levelName;?>" size="35"></td>
             </tr>
             <tr>
                 <td>題目</td>
-                <td><input type="text" name="question" ></td>
+                <td><input type="text" name="question" size="35"></td>
             </tr>
             <tr>
                 <td>選項1</td>
-                <td><input type="text" name="choice1" ></td>
+                <td><input type="text" name="choice1" size="35"></td>
             </tr>
             <tr>
                 <td>選項2</td>
-                <td><input type="text" name="choice2" ></td>
+                <td><input type="text" name="choice2" size="35"></td>
             </tr>
             <tr>
                 <td>選項3</td>
-                <td><input type="text" name="choice3" ></td>
+                <td><input type="text" name="choice3" size="35"></td>
             </tr>
             <tr>
                 <td>選項4</td>
-                <td><input type="text" name="choice4" ></td>
+                <td><input type="text" name="choice4" size="35"></td>
             </tr>
             <tr>
                 <td>答案</td>
@@ -58,14 +66,14 @@
                 <td><input type="file" name="Image1" onchange="readURL(this)" targetID="preview_progressbarTW_img1" accept="image/gif, image/jpeg, image/png"/></td>
             </tr>
             <tr>
-                <td colspan="2"><img id="preview_progressbarTW_img1" src="#" ,width="300" height="200" /></td>
+                <td colspan="2"><img id="preview_progressbarTW_img1" src="#" ,width="450" height="300" /></td>
             </tr>
             <tr>
                 <td>錯誤pic</td>
                 <td><input type="file" name="Image2" onchange="readURL(this)" targetID="preview_progressbarTW_img2" accept="image/gif, image/jpeg, image/png" ></td>
             </tr>
             <tr>
-                <td colspan="2"><img id="preview_progressbarTW_img2" src="#" ,width="300" height="200" /></td>
+                <td colspan="2"><img id="preview_progressbarTW_img2" src="#" ,width="450" height="300" /></td>
             </tr>
         </table>
         <br/>
@@ -74,6 +82,7 @@
     </form>
 
     <?php
+
         //建立題目
         if (isset($_POST["send"])) {
             if($_POST["level"]=="" || $_POST["question"] == "" || 
@@ -113,10 +122,12 @@
                 //送出UTF8編碼的MySQL指令
                 mysqli_query($link, 'SET NAMES utf8'); 
                 if ( mysqli_query($link, $sql) ) // 執行SQL指令
-                    echo "新增成功<br/>";
+                    echo "<script> alert('新增成功!'); </script>";
                 else
-                    echo "新增失敗,可能原因:此編號已經被使用過<br/>";
+                    echo "<script> alert('新增失敗...'); </script>";
                 mysqli_close($link);      // 關閉資料庫連接	
+
+                $_SESSION['levelName']=$_POST['level'];
             }
         }
         //返回首頁
