@@ -10,7 +10,7 @@
     <center>
     <h1>選擇關卡</h1>
     <hr/><br/>
-        <a href="./level1/levelOne.php"><img src="./pic/button1.png"></a>
+        <a href="./level1/levelOne.php"><img src="./level1/pic/button1.png"></a>
     </center>
 </body>
 </html>

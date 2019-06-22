@@ -30,7 +30,7 @@
     請努力自己找出答案吧。<br/>
     うぷぷぷぷ<br/>
     </h3>
-    <a href="./levelOne.php"><img src="./pic/button1.png" width="180"></a>
+    <a href="./start.php?Q=1"><img src="./pic/button1.png" width="180"></a>
     </center>
 </body>
 </html>
