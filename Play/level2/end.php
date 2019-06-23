@@ -7,7 +7,7 @@
     <title>Level Two</title>
     <style>
         body {
-            background-image:url("./pic/backgroundPic.png");
+            background-image:url("./pic/backgroundPic.jpg");
             background-repeat:no-repeat;
             background-size: cover;
         }
@@ -31,29 +31,19 @@
 <body>
     <center>
     <br/>
-    <b><I><font size="6">21th一迎</font></I></b>
-    <br/><br/><br/><br/>
-    <b><font size="6" color="red" style="text-shadow:0px 0px 15px #FFC400;">
-    恭喜你答對所有題目啦！</font></b>
-    <h3>うぷぷぷぷ～<br/>
-    這張CG就送給你吧！<br/><br/>
-    <font><u><I>記得要拿給工作人員看來集章唷！</I></u></font><br/>
-    <br/>
+    <I><b><font size="6" color="#eed08f" style="text-shadow:0px 0px 15px #000000;">
+    21th一迎</font></b></I>
+    <br/><br/>
+    <b><font size="6" color="#eed08f" style="text-shadow:0px 0px 15px #000000;">
+    恭喜你找到所有碎片！</font></b>
+    <h3 style="color:#b38d6f;">
+    那麼裡面到底裝了什麼回憶呢？<br/>
+    姜姜！還記得一迎時的密室逃脫嗎？<br/>
+    這是當初的場佈圖，有印象當初有找到什麼嗎？<br/>
+    好好的回想一下，和周邊的人聊聊吧！<br/>
     </h3>
-    <h3><font color="red" size="5">※血腥畫面警告※</font><br/>
-    不敢看血腥畫面者<br/>
-    直接拿此頁給工作人員看就行囉！</h3>
 
-    <button class="button button1" onclick="show('light1')"><b>要看CG請按此</b></button>
+    <img src="./pic/map.png"/>
     </center>
-
-        <!--correct-->
-        <div id="light1" class="white_content"> 
-            <div class="con"> 
-                <img src="./pic/cgPic.png" width="380" />
-            </div> 
-            <div class="close"><a href="javascript:void(0)" onclick="hide('light1');location.replace('');">close</a></div> 
-        </div> 
-        <div id="fade" class="black_overlay"></div> 
 </body>
 </html>

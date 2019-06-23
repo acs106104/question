@@ -113,7 +113,7 @@
                 move_uploaded_file($_FILES["Image2"]["tmp_name"],"pic/".$_FILES["Image2"]["name"]);
                 
                 // 開啟MySQL的資料庫連接
-                $link = @mysqli_connect("localhost","root","") 
+                $link = @mysqli_connect("localhost","root","ting813813") 
                         or die("無法開啟MySQL資料庫連接!<br/>");
                 mysqli_select_db($link, "Question");  // 選擇資料庫
                 

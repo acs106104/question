@@ -44,7 +44,7 @@
 
     <?php
         //打開資料庫
-        $link = @mysqli_connect("localhost","root","")
+        $link = @mysqli_connect("localhost","root","ting813813")
         or die("無法開啟MySQL資料庫連接!<br/>");
         mysqli_query($link, 'SET NAMES utf8');//中文顯示問題
 
@@ -71,7 +71,7 @@
         $ans=$row[$which];
     ?>
         <br/><br/>
-        <b><font size="5">Q:<?echo $row['Question']?></font></b>
+        <b><font size="5">Q<?echo $row['Question']?></font></b>
         <br/><br/>
         <button class="button button1" onclick="<?php PHPfunction($row['choice1']) ?>"><? echo $row['choice1'];?></button><br/>
         <button class="button button2" onclick="<?php PHPfunction($row['choice2']) ?>"><? echo $row['choice2'];?></button><br/>

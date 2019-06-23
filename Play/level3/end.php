@@ -31,29 +31,20 @@
 <body>
     <center>
     <br/>
-    <b><I><font size="6">自由創作</font></I></b>
-    <br/><br/><br/><br/>
-    <b><font size="6" color="red" style="text-shadow:0px 0px 15px #FFC400;">
-    恭喜你答對所有題目啦！</font></b>
-    <h3>うぷぷぷぷ～<br/>
-    這張CG就送給你吧！<br/><br/>
-    <font><u><I>記得要拿給工作人員看來集章唷！</I></u></font><br/>
-    <br/>
+    <I><b><font size="6" color="#241e62" style="text-shadow:0px 0px 15px white;">
+    自由創作</font></b></I>
+    <br/><br/><br/>
+    <b><font size="6" color="#241e62" style="text-shadow:0px 0px 15px white;">
+    恭喜你通關啦！</font></b>
+    <h3 style="color:white">
+    看來是有好好欣賞大家的作品了呢！<br/>
+    作為獎勵~我就送上一張珍藏的照片給大家欣賞吧！<br/>
     </h3>
-    <h3><font color="red" size="5">※血腥畫面警告※</font><br/>
-    不敢看血腥畫面者<br/>
-    直接拿此頁給工作人員看就行囉！</h3>
+    <I><h2 style="color:#D1BBFF">希望明年大家也能開開心心的度過呢♡<br/>
+    </h2></I>
 
-    <button class="button button1" onclick="show('light1')"><b>要看CG請按此</b></button>
+    <img src="./pic/family.png" width="380"/>
+
     </center>
-
-        <!--correct-->
-        <div id="light1" class="white_content"> 
-            <div class="con"> 
-                <img src="./pic/cgPic.png" width="380" />
-            </div> 
-            <div class="close"><a href="javascript:void(0)" onclick="hide('light1');location.replace('');">close</a></div> 
-        </div> 
-        <div id="fade" class="black_overlay"></div> 
 </body>
 </html>

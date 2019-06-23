@@ -12,7 +12,7 @@
 
     <?php
         //打開資料庫
-        $link = @mysqli_connect("localhost","root","")
+        $link = @mysqli_connect("localhost","root","ting813813")
         or die("無法開啟MySQL資料庫連接!<br/>");
         mysqli_query($link, 'SET NAMES utf8');//中文顯示問題
 

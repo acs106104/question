@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Level Three</title>
+    <title>20th二迎</title>
     <style>
         body {
             background-image:url("./pic/backgroundPic.png");
@@ -31,6 +31,7 @@
     うぷぷぷぷ<br/>
     </h3>
     <a href="./start.php?Q=1"><img src="./pic/button1.png" width="180"></a>
+    <br/>
     </center>
 </body>
 </html>

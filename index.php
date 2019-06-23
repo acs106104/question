@@ -26,7 +26,7 @@
 
     <?php
         //打開資料庫
-        $link = @mysqli_connect("localhost","root","")
+        $link = @mysqli_connect("localhost","root","ting813813")
         or die("無法開啟MySQL資料庫連接!<br/>");
 
         mysqli_select_db($link,"Question");
@@ -42,7 +42,7 @@
             if($num_rows==0)
                 echo "<script> alert('尚未建立題目'); </script>";
             else
-                header("Location: ./Play/StartAnswer.php"); 
+                header("Location: ./Play"); 
         }
     ?>
     </center>

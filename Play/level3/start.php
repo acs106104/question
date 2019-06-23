@@ -38,13 +38,13 @@
 <body>
     <center>
     <br/>
-    <b><I><font size="6">自由創作</font></I></b>
+    <b><I><font size="6" color="WHITE">自由創作</font></I></b>
     <br/><br/>
     <!--題目開始-->
 
     <?php
         //打開資料庫
-        $link = @mysqli_connect("localhost","root","")
+        $link = @mysqli_connect("localhost","root","ting813813")
         or die("無法開啟MySQL資料庫連接!<br/>");
         mysqli_query($link, 'SET NAMES utf8');//中文顯示問題
 
@@ -71,12 +71,12 @@
         $ans=$row[$which];
     ?>
         <br/><br/>
-        <b><font size="5">Q:<?echo $row['Question']?></font></b>
+        <b><font size="5" color="white">Q<?echo $row['Question']?></font></b>
         <br/><br/>
-        <button class="button button1" onclick="<?php PHPfunction($row['choice1']) ?>"><? echo $row['choice1'];?></button><br/>
-        <button class="button button2" onclick="<?php PHPfunction($row['choice2']) ?>"><? echo $row['choice2'];?></button><br/>
-        <button class="button button3" onclick="<?php PHPfunction($row['choice3']) ?>"><? echo $row['choice3'];?></button><br/>
-        <button class="button button4" onclick="<?php PHPfunction($row['choice4']) ?>"><? echo $row['choice4'];?></button><br/>
+        <button class="button button1" style="width:250px" onclick="<?php PHPfunction($row['choice1']) ?>"><? echo $row['choice1'];?></button><br/>
+        <button class="button button2" style="width:250px" onclick="<?php PHPfunction($row['choice2']) ?>"><? echo $row['choice2'];?></button><br/>
+        <button class="button button3" style="width:250px" onclick="<?php PHPfunction($row['choice3']) ?>"><? echo $row['choice3'];?></button><br/>
+        <button class="button button4" style="width:250px" onclick="<?php PHPfunction($row['choice4']) ?>"><? echo $row['choice4'];?></button><br/>
         
         
         <?php
