@@ -7,6 +7,7 @@
     <title>Level Two</title>
     <style>
         body {
+            background-color: #49403b;
             background-image:url("./pic/backgroundPic.jpg");
             background-repeat:no-repeat;
             background-size: cover;

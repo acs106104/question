@@ -7,6 +7,7 @@
     <title>自由創作</title>
     <style>
         body {
+            background-color: #0d3173;
             background-image:url("./pic/backgroundPic.png");
             background-repeat:no-repeat;
             background-size: cover;

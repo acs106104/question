@@ -8,6 +8,7 @@
     <title>21th一迎</title>
     <style>
         body {
+            background-color: #49403b;
             background-image:url("./pic/first.jpg");
             background-repeat:no-repeat;
             background-size: cover;
