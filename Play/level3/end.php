@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Level Three</title>
+    <title>自由創作</title>
     <style>
         body {
             background-image:url("./pic/backgroundPic.png");
@@ -43,7 +43,7 @@
     <I><h2 style="color:#D1BBFF">希望明年大家也能開開心心的度過呢♡<br/>
     </h2></I>
 
-    <img src="./pic/family.png" width="380"/>
+    <img src="./pic/Family.png" width="380"/>
 
     </center>
 </body>

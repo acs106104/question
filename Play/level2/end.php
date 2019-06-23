@@ -42,8 +42,7 @@
     這是當初的場佈圖，有印象當初有找到什麼嗎？<br/>
     好好的回想一下，和周邊的人聊聊吧！<br/>
     </h3>
-
-    <img src="./pic/map.png"/>
+    <img src="./pic/Map.png" width="380" />
     </center>
 </body>
 </html>

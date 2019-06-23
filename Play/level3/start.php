@@ -12,7 +12,7 @@
             background-size: cover;
         }
     </style>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="Style.css">
     <script> 
         function show(tag){ 
             var light=document.getElementById(tag); 
@@ -39,7 +39,7 @@
     <center>
     <br/>
     <b><I><font size="6" color="WHITE">自由創作</font></I></b>
-    <br/><br/>
+    <br/>
     <!--題目開始-->
 
     <?php
@@ -72,7 +72,7 @@
     ?>
         <br/><br/>
         <b><font size="5" color="white">Q<?echo $row['Question']?></font></b>
-        <br/><br/>
+        <br/><br/><br/>
         <button class="button button1" style="width:250px" onclick="<?php PHPfunction($row['choice1']) ?>"><? echo $row['choice1'];?></button><br/>
         <button class="button button2" style="width:250px" onclick="<?php PHPfunction($row['choice2']) ?>"><? echo $row['choice2'];?></button><br/>
         <button class="button button3" style="width:250px" onclick="<?php PHPfunction($row['choice3']) ?>"><? echo $row['choice3'];?></button><br/>
