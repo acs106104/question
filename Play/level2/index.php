@@ -9,7 +9,7 @@
     <style>
         body {
             background-color: #49403b;
-            background-image:url("./pic/first.jpg");
+            background-image:url("./pic/First.jpg");
             background-repeat:no-repeat;
             background-size: cover;
         }
